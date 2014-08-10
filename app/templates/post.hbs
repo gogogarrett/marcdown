@@ -1,0 +1,17 @@
+{{#link-to 'posts'}} < Back {{/link-to}}
+
+
+<h1>Title:</h1>
+{{format-markdown title}}
+
+<br/>
+
+<h1>Body:</h1>
+{{format-markdown body}}
+
+<br/>
+
+{{#link-to 'post.edit' this}} Edit {{/link-to}}
+
+
+{{outlet}}

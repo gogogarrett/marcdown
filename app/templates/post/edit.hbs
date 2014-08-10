@@ -1,0 +1,15 @@
+<h1> Edit Post. </h1>
+
+<form>
+  <div class="field-group">
+    <label>Title</label>
+    {{input type="text" value=title}}
+  </div>
+
+  <div class="field-group">
+    <label>Body</label>
+    {{textarea value=body cols="80" rows="6"}}
+  </div>
+
+  <button {{action savePost}}>Save</button>
+</form>
