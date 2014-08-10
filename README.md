@@ -1,5 +1,12 @@
 # Marcdown
 
+Pairing with [@willrax](https://github.com/willrax) on creating a simple post creator.. markdown editor.. extraordinaire!
+
+- EmberCLI
+- Localstorage adapater (for now)
+- Showdown for markdown conversion
+
+
 This README outlines the details of collaborating on this Ember application.
 
 ## Installation
