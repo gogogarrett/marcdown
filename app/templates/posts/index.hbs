@@ -1,18 +1,14 @@
-<div class="col-md-3">
+<div class="col-md-12">
   <ul>
     {{#each post in controller}}
       <li>
         {{#link-to 'post.index' post}}
           {{format-markdown post.title}}
+          {{!-- we need to add teaser for body maybe? --}}
         {{/link-to}}
       </li>
     {{/each}}
   </ul>
 
-  {{#link-to 'posts.new'}} New {{/link-to}}
-</div>
-
-
-<div class='col-md-9'>
-  {{outlet}}
+  {{#link-to 'posts.new' classNames="btn btn-default"}} New {{/link-to}}
 </div>

@@ -1,17 +1,24 @@
-<h1> Edit Post. </h1>
+<div class="col-md-6">
+  <h1> Edit Post. </h1>
 
-<form>
-  <div class="field-group">
-    <label>Title</label>
-    {{input type="text" value=model.title}}
-  </div>
+  <form>
+    <div class="form-group">
+      <label>Title</label>
+      {{input type="text" value=model.title class="form-control"}}
+    </div>
 
-  <div class="field-group">
-    <label>Body</label>
-    {{textarea value=model.body cols="80" rows="6"}}
-  </div>
+    <div class="form-group">
+      <label>Body</label>
+      {{textarea value=model.body cols="80" rows="6" class="form-control"}}
+    </div>
 
-  <button {{action save}}>Save</button>
-</form>
+    <button {{action save}} class="btn btn-default">Save</button>
+  </form>
 
-<span {{action cancel}}>Cancel</span>
+  <span {{action cancel}}>Cancel</span>
+</div>
+
+<div class="col-md-6">
+  {{format-markdown model.title}}
+  {{format-markdown model.body}}
+</div>

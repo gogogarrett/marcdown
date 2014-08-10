@@ -1,14 +1,12 @@
-{{#link-to 'posts'}} < Back {{/link-to}}
+<div class="col-md-12">
+  {{#link-to 'posts' classNames="btn btn-default"}} Back {{/link-to}}
 
+  <h1> {{format-markdown title}} </h1>
+  <p> {{format-markdown body}} </p>
 
-<h1>Title:</h1>
-{{format-markdown title}}
+  <br/>
 
-<br/>
-
-<h1>Body:</h1>
-{{format-markdown body}}
-
-<br/>
-
-{{#link-to 'post.edit' this}} Edit {{/link-to}}
+  {{#link-to 'post.edit' this classNames="btn btn-default"}}
+    Edit
+  {{/link-to}}
+</div>
