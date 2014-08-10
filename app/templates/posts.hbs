@@ -1,0 +1,17 @@
+This is posts:
+
+<ul>
+  {{#each post in controller}}
+    <li>
+      {{#link-to 'post' post}}
+        {{format-markdown post.title}}
+      {{/link-to}}
+    </li>
+  {{/each}}
+</ul>
+
+
+{{#link-to 'posts.new'}} New {{/link-to}}
+
+
+{{outlet}}
