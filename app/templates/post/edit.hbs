@@ -3,13 +3,15 @@
 <form>
   <div class="field-group">
     <label>Title</label>
-    {{input type="text" value=title}}
+    {{input type="text" value=model.title}}
   </div>
 
   <div class="field-group">
     <label>Body</label>
-    {{textarea value=body cols="80" rows="6"}}
+    {{textarea value=model.body cols="80" rows="6"}}
   </div>
 
-  <button {{action savePost}}>Save</button>
+  <button {{action save}}>Save</button>
 </form>
+
+<span {{action cancel}}>Cancel</span>
