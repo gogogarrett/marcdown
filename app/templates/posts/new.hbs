@@ -1,0 +1,15 @@
+<h1> New Post. </h1>
+
+<form>
+  <div class="field-group">
+    <label>Title</label>
+    {{input type="text" value=fields.title}}
+  </div>
+
+  <div class="field-group">
+    <label>Body</label>
+    {{textarea value=fields.body cols="80" rows="6"}}
+  </div>
+
+  <button {{action savePost}}>Save</button>
+</form>
