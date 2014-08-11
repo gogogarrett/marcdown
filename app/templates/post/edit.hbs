@@ -1,9 +1,6 @@
 <div class="col-md-6">
-  <h1> Edit Post. </h1>
-
   <form>
     <div class="form-group">
-      <label>Title</label>
       {{input type="text" value=model.title class="form-control"}}
     </div>
 
@@ -19,6 +16,7 @@
 </div>
 
 <div class="col-md-6">
-  {{format-markdown model.title}}
+  {{word-count model.body}}
+
   {{format-markdown model.body}}
 </div>
