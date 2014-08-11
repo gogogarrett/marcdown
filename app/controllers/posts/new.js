@@ -10,6 +10,7 @@ export default Ember.Controller.extend({
   actions: {
     save: function() {
       var _that = this;
+      this.set('fields.createdAt', new Date());
       var post = this.store.createRecord("post", this.get("fields"));
 
       post.save().then(function(){
