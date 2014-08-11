@@ -1,6 +1,4 @@
 <div class="col-md-6">
-  <h1> New Post. </h1>
-
   <form>
     <div class="form-group">
       <label>Title</label>
@@ -15,11 +13,12 @@
     <button {{action save}} class="btn btn-default">Save</button>
   </form>
 
-  <span {{action cancel}}>Cancel</span>
+  <a href="#" {{action cancel}} class="btn btn-danger">Cancel</a>
 </div>
 
 <div class="col-md-6">
-  {{format-markdown fields.title}}
+  {{word-count fields.body}}
+
   {{format-markdown fields.body}}
 </div>
 

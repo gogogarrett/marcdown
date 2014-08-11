@@ -3,7 +3,7 @@
 
   <h1> {{format-markdown title}} </h1>
   <p> {{format-markdown body}} </p>
-
+  {{format-timeago createdAt}}
   <br/>
 
   {{#link-to 'post.edit' this classNames="btn btn-default"}}

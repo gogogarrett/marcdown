@@ -1,10 +1,10 @@
 <div class="col-md-12">
-  <ul>
+
+  <ul class="list-group">
     {{#each post in controller}}
-      <li>
+      <li class="list-group-item">
         {{#link-to 'post.index' post}}
-          {{format-markdown post.title}}
-          {{!-- we need to add teaser for body maybe? --}}
+          {{post.title}}
         {{/link-to}}
       </li>
     {{/each}}

@@ -12,11 +12,11 @@
     <button {{action save}} class="btn btn-default">Save</button>
   </form>
 
-  <span {{action cancel}}>Cancel</span>
+  <a href="#" {{action cancel}} class="btn btn-danger">Cancel</a>
 </div>
 
 <div class="col-md-6">
   {{word-count model.body}}
 
-  {{format-markdown model.body}}
+  {{format-markdown fields.body}}
 </div>
